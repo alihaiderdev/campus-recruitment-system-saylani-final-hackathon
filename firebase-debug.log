@@ -1,0 +1,51 @@
+[debug] [2021-01-26T15:56:35.483Z] ----------------------------------------------------------------------
+[debug] [2021-01-26T15:56:35.486Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Shoaib Soomro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-26T15:56:35.487Z] CLI Version:   9.2.1
+[debug] [2021-01-26T15:56:35.487Z] Platform:      win32
+[debug] [2021-01-26T15:56:35.487Z] Node Version:  v15.6.0
+[debug] [2021-01-26T15:56:35.488Z] Time:          Tue Jan 26 2021 07:56:35 GMT-0800 (Pacific Standard Time)
+[debug] [2021-01-26T15:56:35.488Z] ----------------------------------------------------------------------
+[debug] [2021-01-26T15:56:35.488Z] 
+[debug] [2021-01-26T15:56:35.495Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-26T15:56:35.496Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Shoaib Soomro\Desktop\company
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using stech-e7859. 
+[debug] [2021-01-26T15:56:40.392Z] > refreshing access token with scopes: []
+[debug] [2021-01-26T15:56:40.393Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-26T15:56:41.591Z] <<< HTTP RESPONSE 200 {"date":"Tue, 26 Jan 2021 15:56:40 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-26T15:56:41.660Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/stech-e7859 [none]
+[debug] [2021-01-26T15:56:43.095Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/stech-e7859 403
+[debug] [2021-01-26T15:56:43.096Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/stech-e7859 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-01-26T15:56:43.096Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-01-26T15:56:46.346Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Shoaib Soomro\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Shoaib Soomro\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:220:23)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+    at async Client.request (C:\Users\Shoaib Soomro\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:20)
+    at async Object.getFirebaseProject (C:\Users\Shoaib Soomro\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.doSetup [as project] (C:\Users\Shoaib Soomro\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Shoaib Soomro\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project stech-e7859. Please make sure the project exists and your account has permission to access it.
